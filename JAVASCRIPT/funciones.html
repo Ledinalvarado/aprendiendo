@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+</head>
+<body>
+
+<form action="" method="post" name="formu" id="formu"
+      onsubmit="return comprobar()">
+    Tu nombre: <input type="text" name="nombre" value=""><br>
+    <br>
+    Tu edad:   <input type="text" name="edad" value="" size="2" maxlength="2"><br>
+    <input type="submit" value="   Enviar   ">
+</form>
+
+<script language="JavaScript">
+    //calculadora
+
+    function comprobar()
+    {
+        var nombre = document.formu.nombre.value;
+        var edad = document.getElementsByName("edad").value;
+
+        if (nombre.length > 30)
+        {
+            alert("Tu nombre es demasiado grande. Redúcelo.");
+            return false;
+        }
+
+        if (edad >= 20 && edad <= 40)
+        {
+            alert("Si tienes entre 20 y 40 años, no puedes usar este programa.");
+            return false;
+        }
+
+        confirm("Todo esta en orden, se ha enviado el formulario");
+
+        return true;
+    }
+    /*//////////////////////////////////////*/
+
+
+    //funciones
+
+    // function saludo(nombre) {
+    //     document.write("Welcome to my page "+nombre);
+    // }
+    // saludo("Ledin");
+
+/*////////////////////////////////////*/
+
+    ////suma
+
+    // var suma=function (numero1,numero2) {
+    //     var num1= numero1;
+    //     var num2 =numero2;
+    //
+    //     return num1+num2;
+    // }
+    //
+    // document.write(suma(19,89));
+    //
+    // document.write("<br>");
+    //
+    // document.write(suma(25,48));
+
+    /*/////////////////////////////////////*/
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

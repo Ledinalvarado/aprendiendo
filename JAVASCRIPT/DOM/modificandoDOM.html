@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <ol id="lista">
+        <li>afsdbsdhsdfbsdfhssdfbdf</li>
+            <ul>df</ul>
+        <li>afsdbsdhzsfbrtjrtasdvqersdfbsdfhssdfbdf</li>
+
+    </ol>
+
+
+<script>
+   var elemento= document.createElement("li");
+   var contenido= document.createTextNode("Nuevo Texto 1");
+
+   elemento.appendChild(contenido);
+
+   //reemplazando elemento del DOM
+   // var padre=document.getElementsByTagName("li")[0].parentNode;
+   // var referencia=document.getElementsByTagName("li")[1];
+   // padre.replaceChild(elemento,referencia);
+
+
+   //eliminando elementos del DOM
+   var padre=document.getElementsByTagName("li")[0].parentNode;
+   var referencia=document.getElementsByTagName("li")[1];
+
+   padre.removeChild(referencia);
+
+
+
+   /*////////////////////////////////////////////////////////////*/
+
+   // elemento.appendChild(contenido);//estamos agregando el contenido al elemento
+   // // document.body.appendChild(elemento);//agregamos el elemento en donde lo necesitemos
+   //
+   // // var padre=document.getElementById("lista");
+   // var padre=document.getElementsByTagName("li")[0].parentNode;
+   // // var padre=document.getElementById("lista");
+   //  var primerElemento=document.getElementsByTagName("li")[1];
+   //
+   // // padre.appendChild(elemento);// se agrega al final
+   //
+   // padre.insertBefore(elemento,primerElemento);
+   //
+   //
+   // /*///////////////////////////////////*/
+   //
+   //  var newelement=document.createElement("ul");
+   //  var content=document.createTextNode("sub-lista");
+   //
+   //  newelement.appendChild(content);
+   //  var dad=document.getElementsByTagName("ul")[0].parentNode;
+   //  dad.appendChild(newelement);
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+</script>
+</body>
+</html>

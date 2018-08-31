@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+    <!--var frutas=["sandia","fresa","uvas","melon","limon"];-->
+    <!--// document.write(frutas);-->
+
+
+    <!--//primer elemento del array-->
+    <!--var primer= frutas[0];-->
+    <!--// document.write(primer);-->
+
+    <!--/*//////////////////////////////////////////////////*/-->
+
+    <!--//ultimo elemento del array-->
+    <!--var ultimo =frutas[frutas.length-3];  //usamos la palabra reservada length, para-->
+    <!--// document.write(ultimo);-->
+
+    <!--/*//////////////////////////////////////////////////*/-->
+
+    <!--//Bucle sobre un array-->
+
+
+
+    <!--/*//////////////////////////////////////////////////*/-->
+
+    <!--//añadir elemento al final de un Array-->
+    <!--var nuevoelemento = frutas.push('Naranja');-->
+    <!--// document.write();-->
+
+    <!--/*//////////////////////////////////////////////////*/-->
+
+    <!--//eliminar un elemento del final de un array-->
+    <!--var ultimo =frutas.pop();-->
+    <!--// document.write(frutas);-->
+
+    <!--/*//////////////////////////////////////////////////*/-->
+
+    <!--//eliminar elemento del inicio de un Array-->
+    <!--var primero= frutas.shift();-->
+
+    <!--// document.write(primero);-->
+
+    <!--/*//////////////////////////////////////////////////*/-->
+
+
+    <!--//Encontrar el indice de un elemento en el Array-->
+    <!--frutas.push('Mango');-->
+
+    <!--var pos =frutas.indexOf('fresa');-->
+    <!--// document.write(pos);-->
+
+    <!--/*//////////////////////////////////////////////////*/-->
+
+    <!--//Eliminar un elemento con el indice de posicion-->
+    <!--var elementoEliminado=frutas.splice(pos,1);-->
+
+    <!--// document.write(elementoEliminado);-->
+
+
+    <!--/*/////////////////////////////////////////////////////////////////////////////////////////*/-->
+
+
+    <!--//Eliminar elementos con el indice de posicion-->
+
+    <!--var vegetales=["repollo","zanahoria","tomate","lechuga"];-->
+    <!--console.log(vegetales);-->
+
+
+<!--</script>-->
+
+
+<script>
+    //Eliminar elementos con el indice de posicion
+
+    var vegetales=["repollo","zanahoria","tomate","lechuga"];
+    // document.write(vegetales);
+
+
+/*/////////////////////////////////////////*/
+
+    var pos = 1, n = 2;
+
+    var elementosEliminados = vegetales.splice(pos, n);
+    // así es como se eliminan elementos, n define la cantidad de elementos a eliminar,
+    // de esa posicion(pos) en adelante hasta el final del array.
+
+    // document.write(vegetales);
+
+    // document.write(elementosEliminados);
+
+
+
+
+    /*///////////////////////////////////////////////////*/
+
+
+    var copiaSuperficial=vegetales.slice();
+
+    // document.write(copiaSuperficial);
+
+
+    // if(copiaSuperficial === copiaSuperficial){
+    //     alert("I'dont know")
+    //
+    // }else {
+    //     alert("what's up?")
+    // }
+
+
+
+    /**//////////////////////////*/*/
+
+    //agregando elementos al inicio de un array usando la funcion unshift
+    vegetales.unshift("remolacha","cebolla","yuca");
+    // document.write(vegetales);
+
+    /*/////////////////////////////////////////*/
+
+    //con shitf() estamos eliminando el primer elemento de un array.
+    firsst = vegetales.shift();
+    // console.log(firsst);
+    // document.write(vegetales);
+
+
+    /*////////////////////////////////////////////////*/
+
+    //Vamos a agregar un elemento al final del array
+    vegetales.push("remolacha");
+    // document.write(vegetales);
+
+    /*////////////////////////////////////////////////*/
+
+    //vamos a eliminar el ultimo elemento del array
+    vegetales.pop();
+    // document.write(vegetales);
+
+    /*////////////////////////////////////////////////*/
+
+    //veremos la cantidad de elementos que tiene un array
+   var paises =["Angola","Canada","Panama","Francia"];
+   document.write(paises.length);
+
+</script>
+
+
+</body>
+</html>

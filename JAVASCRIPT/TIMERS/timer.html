@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timers, Timeout e Interval</title>
+</head>
+<body>
+
+
+</body>
+
+<script>
+    (function () {
+      //timeout
+        var tiempo=2000;
+        var contador=0;
+      var saludo=function () {
+          document.write('saludo')
+          contador++;
+
+          if (contador === 5){
+              clearInterval(intervalo);
+
+          }
+      }  ;
+
+      // setTimeout(saludo,tiempo)
+
+
+        //interval
+
+        // setInterval(saludo,tiempo)
+        var intervalo= setInterval(saludo,2000)
+    }());
+</script>
+
+</html>

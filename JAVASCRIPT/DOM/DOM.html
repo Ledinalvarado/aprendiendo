@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+<body>
+
+<h1>Titulo de Nuestro Sitio Web</h1>
+
+<div id="subtitulo">
+
+</div>
+
+<p>Lorem ipsumiun skjdygbgv wefjjnsuyxcb qwefqhwebeb i est a es un a prueba de esta pagina,
+es decir estamos aprendiendo javascript , y estoy utilzando el DOM
+</p>
+<p id="segundo">
+    Como pueden ver este texto no dice mucho es solo para llenar espacio
+</p>
+
+<!--//////////////////////////////////-->
+
+<script>
+    var elementosP= document.getElementsByTagName("p"); //vamos a hacer referencia a los elementos p
+    var segundoParrafo=document.getElementById("segundo");
+
+    //1. Crear el elemento
+    var elemento=document.createElement("h2");
+    //2. Crear un nodo de texto
+    var contenido= document.createTextNode("Este es nuestro titular");
+    //3. Añadir el nodo de texto al elemento
+    elemento.appendChild(contenido);
+    //4. Agregar atributos al elemento
+    elemento.setAttribute("align","center");
+    //5. Agregar el elemento al documento
+    document.getElementById("subtitulo").appendChild(elemento);
+
+</script>
+</body>
+</html>

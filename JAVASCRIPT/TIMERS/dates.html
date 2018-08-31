@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fechas</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    var condicion=true;
+
+
+
+    (function () {
+      var fecha=new Date();
+     // document.write(fecha);
+
+
+      // document.write(fecha.getHours()-12); //reloj de 24 horas
+      document.write(fecha.getHours()+'<br>');
+      document.write(fecha.getMinutes()+'<br>'+'<br>'+'<br>');
+
+
+
+      document.write('DIA: '+fecha.getDay()+'<br>');
+      document.write('FECHA:'+fecha.getDate()+'<br>');
+      document.write('MES:'+fecha.getMonth()+'<br>');
+      document.write('AÑO :'+fecha.getFullYear());
+
+
+
+    }())
+</script>
+</html>

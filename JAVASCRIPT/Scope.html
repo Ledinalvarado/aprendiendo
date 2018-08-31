@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        var variableGlobal = "Es una variable global";
+
+        var miFuncion= function () {
+
+            // variableGlobal="Esta es Global, modificada";
+            // alert(variableGlobal);
+
+            var variableLocal="Variable local"; //estando dentro de una funcion se convierte en variable local
+                                            //pero si al inicio le quitamos la palabra reservada var "variableLocal="Es Local"", pasaria a ser una
+                                            //variable globla, aun estando dentro de una funcion.
+            alert(variableLocal);
+
+            var FuncionLocal= function () {
+                // var variableLocal="Esta es variable local, dentro de FuncionLocal";
+                alert(variableLocal);
+            }
+            FuncionLocal();
+        }
+
+        miFuncion();
+    </script>
+</body>
+</html>

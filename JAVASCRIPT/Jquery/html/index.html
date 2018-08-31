@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Jquery</title>
+</head>
+<body>
+<h1 class="saludo">Hola Ledin Alvarado</h1>
+<p id="parrafo">Este es un párrafo</p>
+
+<div> ESTE ES UN ELEMENTO DIV</div>
+<div></div>
+
+
+<!--/*//////////////////////////////*/-->
+<script src="../js/jquery.min.js"></script>
+<!--/*//////////////////////////////*/-->
+<script>
+    $(document).ready(function () {
+     $('#parrafo').text("hello");
+     $('.saludo').css({'background-color':'navy','color':'white',
+        'font-size':'25px',
+         'font-family':'arial'
+     });
+     $('div').text("modifique un elemento html")//se agrega a todos los elementos con ese nombre , clase o id
+        $('div').css({'color': 'navy',
+            'background':'#eee'
+            })
+    });
+</script>
+<!--/*//////////////////////////////*/-->
+</body>
+</html>

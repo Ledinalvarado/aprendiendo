@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejando Errores</title>
+</head>
+<body>
+<h1 class="saludo">Hola Ledin Alvarado</h1>
+<p id="parrafo">Este es un párrafo</p>
+
+<div> ESTE ES UN ELEMENTO DIV</div>
+<div></div>
+
+
+<!--/*//////////////////////////////*/-->
+<script src="../js/jquery.min.js"></script>
+
+
+<script>
+    $.when($.ready, $.getScript("../js/index.js"))
+        .then(function () {
+    document.write("pasa, no hubo errores");
+    }).catch(function () {
+        document.write("no pasa, hubo algun tipo de error");
+    });
+</script>
+
+</body>
+</html>
